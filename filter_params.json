@@ -1,0 +1,38 @@
+[
+  {
+    "nb_neighbors": 10,
+    "std_ratio": 1.0
+  },
+  {
+    "nb_neighbors": 10,
+    "std_ratio": 2.0
+  },
+  {
+    "nb_neighbors": 10,
+    "std_ratio": 3.0
+  },
+  {
+    "nb_neighbors": 20,
+    "std_ratio": 1.0
+  },
+  {
+    "nb_neighbors": 20,
+    "std_ratio": 2.0
+  },
+  {
+    "nb_neighbors": 20,
+    "std_ratio": 3.0
+  },
+  {
+    "nb_neighbors": 30,
+    "std_ratio": 1.0
+  },
+  {
+    "nb_neighbors": 30,
+    "std_ratio": 2.0
+  },
+  {
+    "nb_neighbors": 30,
+    "std_ratio": 3.0
+  }
+]
