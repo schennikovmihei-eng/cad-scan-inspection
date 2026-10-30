@@ -1,0 +1,18 @@
+{
+  "source_run": "/workspace/scratch/a5ae1ad07cf6/output/cad_scan_stand/example_results",
+  "run_sha256": "81d42ed2c2d19651536b9647d544f60189be3a641bbc7d36444308560ef048a6",
+  "summary_sha256": "c4578857e033bb95404f8abf8f043bacfa8ea6d2963b1622fbfbaace739ebe43",
+  "dpi": 300,
+  "matplotlib": "3.10.8",
+  "numpy": "2.3.5",
+  "units": "original CAD coordinate units; physical unit not verified",
+  "neural_inference_repeated": false,
+  "plot_data": "saved results only",
+  "figure_formats": [
+    "png",
+    "pdf"
+  ],
+  "white_background": true,
+  "status": "completed",
+  "metrics_only": true
+}

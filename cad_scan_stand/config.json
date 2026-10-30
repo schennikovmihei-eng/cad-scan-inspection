@@ -1,0 +1,38 @@
+{
+  "project_dir": "..",
+  "mesh": "shoe.stl",
+  "scan": "shoe_clean.ply",
+  "manual_calibration": "aligment.npz",
+  "prepared_inputs": "registration_input",
+  "results_dir": "stand_runs",
+  "windows_python": ".venv/Scripts/python.exe",
+  "pointfilter_python": ".venv-ai/Scripts/python.exe",
+  "pointfilter_repo": "Pointfilter",
+  "wsl": {
+    "distribution": "Ubuntu",
+    "user": "mihei",
+    "conda": "/home/mihei/miniforge3/bin/conda",
+    "environment": "geotransformer",
+    "repo": "/home/mihei/GeoTransformer",
+    "expected_commit": "e7a135af4c318ff3b8d7f6c963df094d7e4ea540"
+  },
+  "preparation": {
+    "mode": "reuse_fixed_sample",
+    "sample_points": 5000,
+    "network_diagonal": 3.0
+  },
+  "seed": 42,
+  "modelnet_points": 717,
+  "icp_iterations": 100,
+  "sor": [
+    {"nb_neighbors": 10, "std_ratio": 1.0},
+    {"nb_neighbors": 10, "std_ratio": 2.0},
+    {"nb_neighbors": 10, "std_ratio": 3.0},
+    {"nb_neighbors": 20, "std_ratio": 1.0},
+    {"nb_neighbors": 20, "std_ratio": 2.0},
+    {"nb_neighbors": 20, "std_ratio": 3.0},
+    {"nb_neighbors": 30, "std_ratio": 1.0},
+    {"nb_neighbors": 30, "std_ratio": 2.0},
+    {"nb_neighbors": 30, "std_ratio": 3.0}
+  ]
+}

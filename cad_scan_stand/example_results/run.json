@@ -1,0 +1,172 @@
+{
+  "status": "completed",
+  "config": {
+    "project_dir": "..",
+    "mesh": "shoe.stl",
+    "scan": "shoe_clean.ply",
+    "manual_calibration": "aligment.npz",
+    "prepared_inputs": "registration_input",
+    "results_dir": "stand_runs",
+    "windows_python": ".venv/Scripts/python.exe",
+    "pointfilter_python": ".venv-ai/Scripts/python.exe",
+    "pointfilter_repo": "Pointfilter",
+    "wsl": {
+      "distribution": "Ubuntu",
+      "user": "mihei",
+      "conda": "/home/mihei/miniforge3/bin/conda",
+      "environment": "geotransformer",
+      "repo": "/home/mihei/GeoTransformer",
+      "expected_commit": "e7a135af4c318ff3b8d7f6c963df094d7e4ea540"
+    },
+    "preparation": {
+      "mode": "reuse_fixed_sample",
+      "sample_points": 5000,
+      "network_diagonal": 3.0
+    },
+    "seed": 42,
+    "modelnet_points": 717,
+    "icp_iterations": 100,
+    "sor": [
+      {
+        "nb_neighbors": 10,
+        "std_ratio": 1.0
+      },
+      {
+        "nb_neighbors": 10,
+        "std_ratio": 2.0
+      },
+      {
+        "nb_neighbors": 10,
+        "std_ratio": 3.0
+      },
+      {
+        "nb_neighbors": 20,
+        "std_ratio": 1.0
+      },
+      {
+        "nb_neighbors": 20,
+        "std_ratio": 2.0
+      },
+      {
+        "nb_neighbors": 20,
+        "std_ratio": 3.0
+      },
+      {
+        "nb_neighbors": 30,
+        "std_ratio": 1.0
+      },
+      {
+        "nb_neighbors": 30,
+        "std_ratio": 2.0
+      },
+      {
+        "nb_neighbors": 30,
+        "std_ratio": 3.0
+      }
+    ]
+  },
+  "project": "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..",
+  "stages": {
+    "01_prepare": {
+      "status": "completed",
+      "output": "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input",
+      "seconds": 1.9462617000026512,
+      "artifact_hashes": {
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\preparation.npz": "910f91579822703a54116c611809a69944a7389cf23b91f5632cb0676b3bb8de",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\preparation_report.json": "c65643de24b6fcec8259c34917be26529f217e93d4cc08a27b32b1892b170da0",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\ref.npy": "70055910622c615b730cd0a0e7a23859e71d707f0454a86525f9dc85f919c924",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\src.npy": "1d89d4f8df85e8524e40d5d650543995a2878ba77e968857c8094c1a43045adc",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\aligment.npz": "40c59884cd7989ec9234fdeb7d076f179ee704c61a35f4a4eb63966b64039b04",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\filter_params.json": "26d5110de16ad923b8fb5aa32b74875ee78c9faa50c085327e5589d375d96600",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\shoe.stl": "c03bbd9b4a59e63fdb09983b8dadcefcfe3e4c26caea7e54729a165cf105ea8a",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\shoe_clean.ply": "54c86180d22a1b3e36c7fdee302cf87e583029ef518a693f9ce58b625e34c9b9"
+      }
+    },
+    "02_neural_registration": {
+      "status": "completed",
+      "output": "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408",
+      "seconds": 15.92697169999883,
+      "artifact_hashes": {
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\metrics.json": "20e0c9fccba7422c953437fd7a10ff0a34bcda584f1cbcd9db245b6428401a8f",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\preparation.npz": "adff27a98d7f2ae200e4a466f4d34142fb694d5c9fc7efe3ae5df2a5c9ec5ea7",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\ref.npy": "808b26a88aa3ba172f4407d6c7eba20b233a0f90519750b2f45387a05226f5fa",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\src.npy": "3f50b0abd14ebd9a36156b23d9e04c5f365f092ba6b3e484a6ec92813d50decb",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\transform_network.npy": "efe8c8f18b9070f9a2d8749fb461cbc11d7fd05b3b42c12b8ead64a99f1612fb",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\transform_scan_to_cad.npy": "cdee7a416596680a49d0fa020408705ad05927720e3b18556b7f47656d78f486"
+      }
+    },
+    "03_icp": {
+      "status": "completed",
+      "output": "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606",
+      "seconds": 3.8072088999979314,
+      "artifact_hashes": {
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\icp_correction.npy": "d6dcfa5a9e67dbf33d947c23d1800bc8c84e2aef63d0f25d32cb2f2f0f6798c6",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\initial_transform_scan_to_cad.npy": "cdee7a416596680a49d0fa020408705ad05927720e3b18556b7f47656d78f486",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\metrics.json": "6816c20d9f245bffbe77e7d5e9148c48ff6959788a5d7382d5d1210867ce910a",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\transform_scan_to_cad.npy": "18e0dd7ff5569f7e66d9acf6419c41dc609c925eee482f89e8de70ad61ca236f"
+      }
+    },
+    "04_orientation_search": {
+      "status": "completed",
+      "output": "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526",
+      "seconds": 12.514726900000824,
+      "artifact_hashes": {
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\candidates.npz": "ad7089acb0488d14d3142f508bffdbf77c9918e50ef70919f5a40c45788b4fbb",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\metrics.json": "125291d9e4c23de0be50c468552ac50d47071f1366dc8e656ecdf60c67a8e1eb",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\transform_scan_to_cad.npy": "cd97e528472241c44f91470160b6c32ff6ff67452174e09ad82642060758e02c"
+      }
+    },
+    "05_surface_evaluation": {
+      "status": "completed",
+      "output": "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775",
+      "seconds": 1.7321930000034627,
+      "artifact_hashes": {
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\aligned_scan.npy": "243ba66325a81b75bbfc9cfbdacd94a365b8b2259e23170c2bdad8e36b3a1898",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\deviations.csv": "72bab809e0db5a77019b20ca81b0fc8063564df289050ee53aa22364030748ac",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\distances.npy": "8f1ba33280815317f273268c76d3c2f5691a000d5ab909a80d6df731219a4027",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\manual_control_aligned_scan.npy": "bd07a78d8c5da97d04de08cf2a68eece78383880b3279850071c8c5fe1515c3e",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\manual_control_distances.npy": "ca498c016e96dacc4f426a2ec0b2fd9eb5d507a8f5bc3df2b40e1570761bab9a",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\manual_control_transform.npy": "3cfbf94ccda16de6731a7d270f20ff9ce307b566ffaecdcc34e6f5c6a5812dd6",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\metrics.json": "463f3dcf5c06083857a788308b1c0e08be34403c7b9945264fb4d8f99e0e2e11",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\transform_scan_to_cad.npy": "cd97e528472241c44f91470160b6c32ff6ff67452174e09ad82642060758e02c"
+      }
+    },
+    "06_filtering": {
+      "status": "completed",
+      "output": "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736",
+      "seconds": 53.296457999997074,
+      "artifact_hashes": {
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\distances_pointfilter.npy": "d03d4821e33c5dd8b2fa27c78114ae304d521b59878bf5bd48722b002968aa3b",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\distances_raw.npy": "8f1ba33280815317f273268c76d3c2f5691a000d5ab909a80d6df731219a4027",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\filter_comparison.csv": "fd5fb33b9b6f38365358f9aee9441c0d295daa0db3055513a4cf4213370c4202",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\metrics.json": "1773f9b449e51337d11d2b85f11677dfeb63ca462a1dd19df9c0948a3e22af1a",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\pointfilter_run.json": "7e038d0a8a7c56962d3fe33d6d2ad4cc68de3a96ba769f3ee7978c79cfdae786",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\point_shifts.npy": "cf6002e1ca3865a180beddd9805bc28090b6c1a4b2754f9c1838fc0d8808401e",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\scan_for_ai.npy": "243ba66325a81b75bbfc9cfbdacd94a365b8b2259e23170c2bdad8e36b3a1898",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\scan_pointfilter.npy": "85f91b2f4dc3c71eb242be04190c9c8839fd8919356928ac45d9dc35ab16615a",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\sor_01.npz": "22d66ef3a1ab539d5b9b34ff5259b1502162af78f14910c881a291e0fd1c4452",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\sor_02.npz": "a9fd41a95c9097dc1d6df1a9b1833cd6b0cd91b29380c3fbe3a27ba28525e7ca",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\sor_03.npz": "e8ffcb540afdf016599a731e4f27607662b78cf8a9ae112a465d7087fabafea5",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\sor_04.npz": "187cfe5a4cd471dbdc892c0b73935a04132301e0c0a488caf21f9eaaaf0a6025",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\sor_05.npz": "09104be176b1ff181733fc643e8da22f86940a92ffaa706f13aa25bbd70e75ef",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\sor_06.npz": "2672c798794d6c9d41ef8511c0103a57a421ceb1cafd5e0d10429f944456e710",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\sor_07.npz": "4381769f04decfb44b3a336f97e9f75c822b1d57873e876e3a5490d039144e2a",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\sor_08.npz": "47321627d640162890da78a4151d4bc3f6a9ffc6442ee8124b62ad2d9e47e9d6",
+        "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736\\sor_09.npz": "d9e69eefeadb24883fcb78742577bfeed1060fbaf8573bc79bee78d02b0f423f"
+      }
+    }
+  },
+  "launcher_python": "3.13.14",
+  "created_utc": "20261030_053525_314948",
+  "scripts_sha256": {
+    "evaluate_full_registration.py": "9f2eb8e1d792942e43aec9a8fd16e33ef37036a9e144dcf5b7534537e1fd8ebb",
+    "refine_modelnet_icp.py": "b0b4589a6424f60711f68cb9a610a1d13240f37bd5da7222d04a1996f209c994",
+    "run_filters_on_alignment.py": "45e0b6cf9910924cc6e215bd14d36d1131ca0dd1eaf1bc803b35bc15d68b7fe7",
+    "run_modelnet_registration.py": "8532828b2b183cd1e268543a409dbb311839e22735c36768123672dd030769df",
+    "try_modelnet_orientations.py": "6db6440ad0ad574946075e5fb0b1de6ee1da9300d3a22e33514980dd117a5600",
+    "run_stand.py": "c8e9b4e2419bd61651855ace2a949b107a32d5ceb8de92b40c08e39b4b15a553"
+  },
+  "report": "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\report.md",
+  "full_alignment": "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775",
+  "filters": "C:\\Users\\mihei\\Desktop\\vkr\\cad_scan_stand\\..\\stand_runs\\run_20261030_053525_314948\\data\\registration_input\\modelnet_20261030_053626_598408\\icp_20261030_053631_083606\\orientations_20261030_053644_306526\\full_scan_20261030_053645_271775\\filters_20261030_053646_897736"
+}
